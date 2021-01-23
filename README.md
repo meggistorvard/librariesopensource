@@ -4,7 +4,7 @@
 
 Library website is considered as communication tool, which help to create and publish the information regarding its activities and services. 
 
-Bigger libraries with staff or consultants dedicated to their sites' design and maintenance will need a CMS that allows for more architectural complexity and design flexibility. A few experts we interviewed mentioned the library sector's commitment to open-source CMS platforms to meet these needs, in line with its general support for the freedom of information. Open-source software source code is available to anyone who wants to customize it. The software is often overseen by a community of developers or a nonprofit rather than a for-profit company. It's free to download and use, but installing and implementing it — and finding support for problems — may require working with a consultant with technical skills and familiarity with the system.
+Bigger libraries with staff or consultants dedicated to their sites' design and maintenance will need a CMS that allows for more architectural complexity and design flexibility. A few experts we interviewed mentioned the library sector's commitment to open-source CMS platforms to meet these needs, in line with its general support for the freedom of information. Open-source software source code is available to anyone who wants to customize it. The software is often overseen by a community of developers or a nonprofit rather than a for-profit company. It's free to download and use, but installing and implementing it — and finding support for problems — may require working with a consultant with technical skills and familiarity with the system. Ready for use.
 
 ### Bootstrap
 
