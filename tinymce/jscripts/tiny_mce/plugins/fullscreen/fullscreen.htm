@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<script type="text/javascript" src="../../tiny_mce.js"></script>
+	<script type="text/javascript">
+		function patchCallback(configurations, key) {
+			if (configurations[key])
+				configurations[key] = "window.opener." + configurations[key];
+		}
+
+		var configurations = {}, paSe = window.opener.tinyMCE.activeEditor.configurations, oeID = window.opener.tinyMCE.activeEditor.id;
+
+		// Clone array
+		for (var n in paSe)
+			configurations[n] = paSe[n];
+
+		// Override options for fullscreen
+		for (var n in paSe.fullscreen_configurations)
+			configurations[n] = paSe.fullscreen_configurations[n];
+
+		// Patch callbacks, make them point to window.opener
+		patchCallback(configurations, 'urlconverter_callback');
+		patchCallback(configurations, 'insertlink_callback');
+		patchCallback(configurations, 'insertimage_callback');
+		patchCallback(configurations, 'setupcontent_callback');
+		patchCallback(configurations, 'save_callback');
+		patchCallback(configurations, 'onchange_callback');
+		patchCallback(configurations, 'init_instance_callback');
+		patchCallback(configurations, 'file_browser_callback');
+		patchCallback(configurations, 'cleanup_callback');
+		patchCallback(configurations, 'execcommand_callback');
+		patchCallback(configurations, 'oninit');
+
+		// Set options
+		delete configurations.id;
+		configurations['mode'] = 'exact';
+		configurations['elements'] = 'fullscreenarea';
+		configurations['add_unload_trigger'] = false;
+		configurations['ask'] = false;
+		configurations['document_base_url'] = window.opener.tinyMCE.activeEditor.documentBaseURI.getURI();
+		configurations['fullscreen_is_enabled'] = true;
+		configurations['fullscreen_editor_id'] = oeID;
+		configurations['theme_advanced_resizing'] = false;
+		configurations['strict_loading_mode'] = true;
+
+		configurations.save_onsavecallback = function() {
+			window.opener.tinyMCE.get(oeID).setContent(tinyMCE.get('fullscreenarea').getContent({format : 'raw'}), {format : 'raw'});
+			window.opener.tinyMCE.get(oeID).execCommand('mceSave');
+			window.close();
+		};
+
+		function unloadHandler(e) {
+			moveContent();
+		}
+
+		function moveContent() {
+			window.opener.tinyMCE.get(oeID).setContent(tinyMCE.activeEditor.getContent());
+		}
+
+		function closeFullscreen() {
+			moveContent();
+			window.close();
+		}
+
+		function doParentSubmit() {
+			moveContent();
+
+			if (window.opener.tinyMCE.selectedInstance.formElement.form)
+				window.opener.tinyMCE.selectedInstance.formElement.form.submit();
+
+			window.close();
+
+			return false;
+		}
+
+		function render() {
+			var e = document.getElementById('fullscreenarea'), vp, ed, ow, oh, dom = tinymce.DOM;
+
+			e.value = window.opener.tinyMCE.get(oeID).getContent();
+
+			vp = dom.getViewPort();
+			configurations.width = vp.w;
+			configurations.height = vp.h - 15;
+
+			tinymce.dom.Event.add(window, 'resize', function() {
+				var vp = dom.getViewPort();
+
+				tinyMCE.activeEditor.theme.resizeTo(vp.w, vp.h);
+			});
+
+			tinyMCE.init(configurations);
+		}
+
+		// Add onunload
+		tinymce.dom.Event.add(window, "beforeunload", unloadHandler);
+	</script>
+</head>
+<body style="margin:0;overflow:hidden;width:100%;height:100%" scrolling="no" scroll="no">
+<form onsubmit="doParentSubmit();">
+<textarea id="fullscreenarea" style="width:100%; height:100%"></textarea>
+</form>
+
+<script type="text/javascript">
+	render();
+</script>
+
+</body>
+</html>

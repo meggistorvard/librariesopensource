@@ -57,11 +57,118 @@ Plupload is a GPL licensed multiple file uploading tool that can present widgets
 
 ---
 
+# TinyMCE script by 
+
+TinyMCE 5 is a powerful and flexible rich text editor that can be embedded in web applications. This quick start covers how to add a TinyMCE editor to a web page using the Tiny Cloud.
+
+<img src="https://meggistorvard.github.io/images/tinymce_editor.png" title="tinymce editor" alt="tinymce editor">
+
+## Quick start 
+
+Get an instance of TinyMCE 3 verion up and running using the Tiny Cloud.
+
+### Step 1: Include the TinyMCE script
+
+Include the following line of code in the <head> of a HTML page.
+
+```
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+or
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+```
+
+### Step 2: Initialize TinyMCE as part of a web form
+
+Initialize TinyMCE 5 on any element (or elements) on the web page by passing an object containing a selector value to tinymce.init(). The selector value can be any valid CSS selector.
+
+For example
+
+```
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+  <title>TinyMCE Test</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- OF COURSE YOU NEED TO ADAPT NEXT LINE TO YOUR tiny_mce.js PATH -->
+  <script type="text/javascript" src="../jscripts/tiny_mce/tiny_mce.js"></script>
+
+  <script type="text/javascript">
+    tinyMCE.init({
+      mode : "textareas"
+    });
+    </script>
+</head>
+<body>
+
+  <!-- OF COURSE YOU NEED TO ADAPT ACTION TO WHAT PAGE YOU WANT TO LOAD WHEN HITTING "SAVE" -->
+  <form method="post" action="show.php">
+    <p>
+      <textarea name="content" cols="50" rows="15">This is some content that will be editable with TinyMCE.</textarea>
+      <input type="submit" value="Save" />
+    </p>
+</form>
+
+</body>
+</html>
+```
+
+Same example using some more buttons
+
+```
+<script type="text/javascript">
+  tinyMCE.init({
+    mode : "textareas"
+  });
+</script>
+```
+
+Adding this content to a HTML file and opening it in a web browser will load a TinyMCE editor, such as:
+
+## Step 3: Add your API key
+
+Replace no-api-key in the source script (<script src=...) with a Tiny Cloud API key, which is created when signing up to the Tiny Cloud.
+
+### Step 4: Save the content with a form POST
+
+Process the content with a form handler.
+
+
+### Next Steps
+
+For information on:
+
+Customizing TinyMCE, see: Basic Setup.
+The three editor modes:
+TinyMCE classic editing mode.
+TinyMCE inline editing mode.
+TinyMCE distraction-free editing mode.
+
+## Contributing
+
+> To get started...
+
+### Step 1
+
+- **Option 1**
+    - 🍴 Fork this repo!
+
+- **Option 2**
+    - 👯 Clone this repo to your local machine using `https://github.com/meggistorvard/tinymce.git`
+
+### Step 2
+
+- **HACK AWAY!** 🔨🔨🔨
+
+### Step 3
+
+- 🔃 Create a new pull request using <a href="https://github.com/meggistorvard/tinymce/compare/" target="_blank">`https://github.com/meggistorvard/tinymce/compare/`</a>.
+
+---
+
 ## License
 
-GNU LESSER GENERAL PUBLIC LICENSE
-The license for each script is provided by the respective author
- <a href="https://opensource.org/" target="_blank">`https://opensource.org/`</a>.
+ MIT license, which puts almost no restrictions on how you can use it. Read the license text
+ <a href="https://fullcalendar.io/license/" target="_blank">`https://fullcalendar.io/license/`</a>.
 
 ## Donations (Optional)
 
@@ -79,5 +186,5 @@ WAYS YOU CAN SUPPORT US
 	Become an ambassador
 
 Supporting further development	
- <a href="https://techcontactsupport.net/?q=donations-free-software" target="_blank">`https://techcontactsupport.net/?q=donations-free-software`</a>
+ <a href="https://www.techsupport.gradiscake.com/?q=donations-free-software" target="_blank">https://www.techsupport.gradiscake.com/?q=donations-free-software</a>
 
