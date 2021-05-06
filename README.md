@@ -1,178 +1,95 @@
-# Powerfull libraries Open-source for your website
+
+Powerfull libraries Open-source for your websites
+=================
+
 
 ## Open Source for More Flexibility
 
 Library website is considered as communication tool, which help to create and publish the information regarding its activities and services. 
 
-Bigger libraries with staff or consultants dedicated to their sites' design and maintenance will need a CMS that allows for more architectural complexity and design flexibility. A few experts we interviewed mentioned the library sector's commitment to open-source CMS platforms to meet these needs, in line with its general support for the freedom of information. Open-source software source code is available to anyone who wants to customize it. The software is often overseen by a community of developers or a nonprofit rather than a for-profit company. It's free to download and use, but installing and implementing it ó and finding support for problems ó may require working with a consultant with technical skills and familiarity with the system. Ready for use.
+Bigger libraries with staff or consultants dedicated to their sites' design and maintenance will need a CMS that allows for more architectural complexity and design flexibility. A few experts we interviewed mentioned the library sector's commitment to open-source CMS platforms to meet these needs, in line with its general support for the freedom of information. Open-source software source code is available to anyone who wants to customize it. The software is often overseen by a community of developers or a nonprofit rather than a for-profit company. It's free to download and use, but installing and implementing it ó and finding support for problems ó may require working with a consultant with technical skills and familiarity with the system. Ready for any use.
 
-### Bootstrap
-
-Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.
 
 ### CkEditor
 
 CKEditor is a WYSIWYG rich text editor which enables writing content directly inside of web pages or online applications. Its core code is written in JavaScript and it is developed by CKSource.
+[Official site](https://ckeditor.com) https://ckeditor.com
 
 ### Colorbox
 
 Colorbox is a jQuery plugin, meaning that it extends the jQuery JavaScript library to include extra functionality. In your HTML document, you must include the jQuery library's source before you include the source of any jQuery plugin.
+[Official site](https://www.jacklmoore.com/colorbox/) https://www.jacklmoore.com/colorbox
 
 ### Colorpicker
 
-A color picker is a graphical user interface widget, usually found within graphics software or online, used to select colors and sometimes to create color schemes
+A color picker is a graphical user interface widget, usually found within graphics software or online, used to select colors and sometimes to create color schemes.
+
+
+### FitVids
+
+It uses the FitVids.js library for fluid width video embeds (e.g. flash video in `<iframe>s`). You don't need it for pure HTML5 videos.
+FitVids is a lightweight, easy-to-use jQuery plugin for fluid width video embeds.
+[Official site](http://fitvidsjs.com) http://fitvidsjs.com
 
 ### Joyride
 
 Joyride is extremely flexible and lets you take control of how people interact with your tour. We programmed it to be cross-browser compatible with modern browsers and even used some fancy CSS to avoid images. Now let's see just how easy it is to take your first ride without getting the fuzz involved.
+[Official site](https://zurb.com/playground/jquery-joyride-feature-tour-plugin)
+
+### jQueryBrowser
+Browser detection is a simple jQuery _plugin_ which helps your website detect the browser through which it is being accessed. It detects the browsers based on user agents and permits you to perform special tasks & display messages when a specific web browser is been detected.
+
+### jQueryFormPlugin
+A simple way to AJAX-ify any form on your page. Also supports file uploads! Click through for quick start guide, code samples, API documentation, FAQ and more.
+[Official site](https://malsup.com/jquery/) https://malsup.com/jquery/
 
 ### OAuth
 
 OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. 
 
+### Offline
+
+Offline.js is a library to automatically alert your users when they've lost internet connectivity, like Gmail.
+It captures AJAX requests which were made while the connection was down, and remakes them when it's back up, so your app reacts perfectly.
+It has a number of beautiful themes and requires no configuration. 
+[https://github.hubspot.com/offline/docs/welcome/](https://github.hubspot.com/offline/docs/welcome/)
+
 ### Plupload
 
 Plupload is a GPL licensed multiple file uploading tool that can present widgets in Flash, Gears, HTML 5, Silverlight, BrowserPlus, and HTML4 depending on the capabilities of the client computer.
 
+### Tiny mce
 
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - Fork this repo!
-
-- **Option 2**
-    - Clone this repo to your local machine using `https://github.com/meggistorvard/librariesopensource.git`
-
-### Step 2
-
-- **HACK AWAY!**
-
-### Step 3
-
-- Create a new pull request using <a href="https://github.com/meggistorvard/librariesopensource/compare/" target="_blank">`https://github.com/meggistorvard/librariesopensource/compare/`</a>.
-
----
-
-# TinyMCE script by 
-
-TinyMCE 5 is a powerful and flexible rich text editor that can be embedded in web applications. This quick start covers how to add a TinyMCE editor to a web page using the Tiny Cloud.
-
-<img src="https://meggistorvard.github.io/images/tinymce_editor.png" title="tinymce editor" alt="tinymce editor">
-
-## Quick start 
-
-Get an instance of TinyMCE 3 verion up and running using the Tiny Cloud.
-
-### Step 1: Include the TinyMCE script
-
-Include the following line of code in the <head> of a HTML page.
-
-```
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-or
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-```
-
-### Step 2: Initialize TinyMCE as part of a web form
-
-Initialize TinyMCE 5 on any element (or elements) on the web page by passing an object containing a selector value to tinymce.init(). The selector value can be any valid CSS selector.
-
-For example
-
-```
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
-<head>
-  <title>TinyMCE Test</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
-  <!-- OF COURSE YOU NEED TO ADAPT NEXT LINE TO YOUR tiny_mce.js PATH -->
-  <script type="text/javascript" src="../jscripts/tiny_mce/tiny_mce.js"></script>
-
-  <script type="text/javascript">
-    tinyMCE.init({
-      mode : "textareas"
-    });
-    </script>
-</head>
-<body>
-
-  <!-- OF COURSE YOU NEED TO ADAPT ACTION TO WHAT PAGE YOU WANT TO LOAD WHEN HITTING "SAVE" -->
-  <form method="post" action="show.php">
-    <p>
-      <textarea name="content" cols="50" rows="15">This is some content that will be editable with TinyMCE.</textarea>
-      <input type="submit" value="Save" />
-    </p>
-</form>
-
-</body>
-</html>
-```
-
-Same example using some more buttons
-
-```
-<script type="text/javascript">
-  tinyMCE.init({
-    mode : "textareas"
-  });
-</script>
-```
-
-Adding this content to a HTML file and opening it in a web browser will load a TinyMCE editor, such as:
-
-## Step 3: Add your API key
-
-Replace no-api-key in the source script (<script src=...) with a Tiny Cloud API key, which is created when signing up to the Tiny Cloud.
-
-### Step 4: Save the content with a form POST
-
-Process the content with a form handler.
+TinyMCE_ is the most advanced WYSIWYG HTML editor designed to simplify website content creation. The rich text editing platform that helped launched. [Official site](https://www.tiny.cloud/)
 
 
-### Next Steps
+Code of Conduct
+=======================
 
-For information on:
+#### Why do I need a code of conduct?
 
-Customizing TinyMCE, see: Basic Setup.
-The three editor modes:
-TinyMCE classic editing mode.
-TinyMCE inline editing mode.
-TinyMCE distraction-free editing mode.
+A code of conduct is a document that establishes expectations for behavior for your projectís participants. Adopting, and enforcing, a code of conduct can help create a positive social atmosphere for your community.
+By participating, you are expected to honor this code.
 
-## Contributing
 
-> To get started...
+License
+=======================
 
-### Step 1
+## MIT Open Source License
 
-- **Option 1**
-    - üç¥ Fork this repo!
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-- **Option 2**
-    - üëØ Clone this repo to your local machine using `https://github.com/meggistorvard/tinymce.git`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Step 2
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- **HACK AWAY!** üî®üî®üî®
+[MIT License](https://opensource.org/licenses/MIT)
 
-### Step 3
 
-- üîÉ Create a new pull request using <a href="https://github.com/meggistorvard/tinymce/compare/" target="_blank">`https://github.com/meggistorvard/tinymce/compare/`</a>.
+Donations
+=======================
+## Donate to Meggis and help us improve free software
 
----
-
-## License
-
- MIT license, which puts almost no restrictions on how you can use it. Read the license text
- <a href="https://fullcalendar.io/license/" target="_blank">`https://fullcalendar.io/license/`</a>.
-
-## Donations (Optional)
-
-Donate to Meggis and help us improve free software
 There are a number of ways in which you can support us and help make a huge difference to our charity whether it be financially, with your time or donating equipment! 
 
 WAYS YOU CAN SUPPORT US
@@ -187,4 +104,4 @@ WAYS YOU CAN SUPPORT US
 
 Supporting further development	
  <a href="https://www.techsupport.gradiscake.com/?q=donations-free-software" target="_blank">https://www.techsupport.gradiscake.com/?q=donations-free-software</a>
-
+ 

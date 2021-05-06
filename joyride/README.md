@@ -1,11 +1,13 @@
+
 Welcome to Joyride
-=====================
+=======================
 
-Joyride is an easy to configure jQuery site tour wizard.
+## Joyride is an easy to configure jQuery site tour wizard.
 
-Installation Guide:      http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
+Installation Guide:      
+http://www.zurb.com/playground/jquery-joyride-feature-tour-plugin
 
-Joyride is MIT-licensed and absolutely free to use.
+Joyride is absolutely free to use.
 
 New in 2.0.3
 * Better screen edge detection
@@ -38,14 +40,13 @@ New in 2.0
 * both `postStepCallback` and `postRideCallback` now return a reference to the last tip index and jquery object
 * more functionality, same size compressed (~12kb)
 
-Documentation
-==============
 
+Documentation
+=======================
 Comprehensive documentation is available on the Joyride homepage listed above.
 
 Repo Contents
-=============
-
+=======================
 * README
 * DEMO - Demo specific files, not necessary to use the plugin
 * joyride-2.0.2.css - Default Joyride styles, required
@@ -55,18 +56,52 @@ Repo Contents
 * jquery.cookie.js - required for cookie support.
 * .gitignore - Those pesky DS_Store files...this is not part of the plugin
 
-ZURB
-====
 
+ZURB
+=======================
 Joyride was made by [ZURB](http://www.zurb.com), a product design company in Campbell, CA.
 
 If Joyride knocks your socks off the way we hope it does and you want more, why not check out [our jobs](http://www.zurb.com/talent/jobs)?
 
-MIT Open Source License
+
+Code of Conduct
 =======================
+
+#### Why do I need a code of conduct?
+
+A code of conduct is a document that establishes expectations for behavior for your project’s participants. Adopting, and enforcing, a code of conduct can help create a positive social atmosphere for your community.
+By participating, you are expected to honor this code.
+
+
+License
+=======================
+
+## MIT Open Source License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+
+Donations
+=======================
+## Donate to Meggis and help us improve free software
+
+There are a number of ways in which you can support us and help make a huge difference to our charity whether it be financially, with your time or donating equipment! 
+
+WAYS YOU CAN SUPPORT US
+	Make a donation
+	Donate software & hardware
+	Recommend a game
+	Provide keys
+	Volunteer
+	Follow our stream on twitch
+	Fundraising ideas
+	Become an ambassador
+
+Supporting further development	
+ <a href="https://www.techsupport.gradiscake.com/?q=donations-free-software" target="_blank">https://www.techsupport.gradiscake.com/?q=donations-free-software</a>

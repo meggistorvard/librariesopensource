@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+<title>Quick Start Guide</title>
+<style>
+body { padding: 0 30px; font-family: 'Lucida Grande', 'Lucida Sans', arial, sans-serif; }
+form { display: block; margin: 20px auto; background: #FFD7AB; border-radius: 5px; padding: 15px }
+h2 { margin-top: 50px; }
+pre { background: #eee; padding: 10px; border-radius: 5px; overflow: auto }
+</style>
+<script src="jquery.js"></script>
+<script src="jquery.browser.js"></script>
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            if ( $.browser.webkit ) {
+			  alert( "This is WebKit!" );
+		    }
+        });
+    </script>
+</head>
+<body>
+  <h1>Quick Start Guide</h1>
+  <div>
+  See https://api.jquery.com/jquery.browser/
+  
+  <h3>Examples</h3/>
+  <pre>
+    // Show the browser info. Will not work in jQuery 1.9 or later
+	jQuery.each( jQuery.browser, function( i, val ) {
+	  $( "<div>" + i + " : <span>" + val + "</span>" )
+	  .appendTo( document.body );
+	});
+	
+	if ( $.browser.webkit ) {
+      alert( "This is WebKit!" );
+    }
+    
+	if ( $.browser.msie ) {
+     alert( $.browser.version );
+    }
+  </pre>
+  <p>With jQuery 1.9 or later </p>
+   <pre>
+    // or added jQuery Migrate plugin is included
+	$.browser.msie;
+  </pre>
+  <p>--- </p>
+   
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- I included a DOCTYPE in case you need to copy this markup. CodePen shows an error but it really doesn't affect anything in this demo. -->
+<!--[if IE 8]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+   <link rel="stylesheet" href="fitvids.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="jquery.fitvids.js"></script>
+    
+   <script src="fitvids.js"></script>   
+   <title>Responsive Videos with jQuery &amp; FitVids.j</title>
+   <style>
+   *, *:before, *:after { box-sizing: border-box; }
+//Styling stuff not needed for demo
+body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.main-container {
+   width: 70%;
+   margin: auto;
+}
+   </style>
+</head>
+<body>
+   <h1>Responsive Videos with jQuery &amp; FitVids.js</h1>
+   <main class="main-container" role="main">
+      <h2>YouTube</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vpRsLPI400U" frameborder="0" allowfullscreen></iframe>
+      <h2>Vimeo</h2>
+      <iframe src="https://player.vimeo.com/video/101875373" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+   </main>
+   <script>
+      $(function(){
+         //Look for all the videos inside this element and make them responsive
+         $(".main-container").fitVids();
+      });
+   </script>
+</body>
+</html>
