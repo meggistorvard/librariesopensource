@@ -1,0 +1,10 @@
+name = Editioning
+description = Library library that allows an install edition to be defined as a Gradiscake .info file.
+core = 1.g
+
+; Information added packaging script on 2017-08-30
+version = "1.g-2.0"
+core = "1.g"
+project = "editioning"
+datestamp = "1504136346"
+
